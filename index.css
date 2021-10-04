@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(88, 65, 57);
+    color: rgb(165, 146, 146);
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: #d4b16e;
+    color: rgb(28, 151, 160);
+    text-align: center;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: rgb(12, 4, 11);
+    font-weight: lighter;
+}
+
+.card-image {
+    height: 180px;
+}
+
+.pagination {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 200;
+   justify-content: center;
+  }
+  
+  .pagination a {
+    color: rgb(214, 205, 205);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .pagination a.active {
+    border-radius: 5px;
+  }
+
+  .pagination a.hover{
+    background-color: antiquewhite;
+  }
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .pagination{
+        padding-left: 120px;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 900px){
+    .pagination{
+        padding-left: 200px;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px){
+    .pagination{
+        padding-left: 370px;
+    }
+}
+@media screen and (min-width:1201px) and (max-width: 1600px){
+    .pagination{
+        padding-left: 570px;
+    }
+    
+}
+
